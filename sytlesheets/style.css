@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css?family=JetBrains Mono:wght@300");
+
+html,
+body {
+  background: #191724;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  color: #cccccc;
+  font-family: "JetBrains Mono";
+  font-weight: 300;
+  font-size: 14pt;
+  min-width: 60em;
+}
+img {
+  border: 0;
+}
+a {
+  outline: 0;
+}
+main,
+figure,
+figcaption {
+  display: block;
+}
+pre,
+code {
+  font-family: "JetBrains Mono";
+}
+header,
+main {
+  -webkit-text-size-adjust: none;
+}
+
+a {
+  text-decoration: none;
+  color: #009900;
+}
+a:hover,
+a:focus {
+  color: #99ff99;
+}
+h1,
+h2 {
+  font-size: 1em;
+  font-weight: normal;
+}
+code {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+code:before {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  display: block;
+  left: -2px;
+  right: -2px;
+  top: 3px;
+  bottom: 0px;
+  border: 1px solid #333340;
+  background: #10101a;
+}
+pre.wrap {
+  max-width: 100%;
+  white-space: pre-wrap;
+}
+
+.quiet {
+  opacity: 0.5;
+}
+p.wrap {
+  width: 45em;
+}
+
+.hidden-until-hover {
+  border: 1px dotted gray;
+  overflow: hidden;
+  position: relative;
+  padding: 0 0.5em;
+  transition: border-color 0s linear 5s;
+}
+.hidden-until-hover:before {
+  content: "(hover to reveal)";
+  position: absolute;
+  opacity: 0.5;
+  text-align: center;
+  left: 0;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  transition: width 0s linear 5s;
+}
+.hidden-until-hover > * {
+  visibility: hidden;
+  transition: visibility 0s linear 5s;
+}
+.hidden-until-hover:hover {
+  transition: border-color 0s linear 1s;
+  border-color: transparent;
+}
+.hidden-until-hover:hover:before {
+  content: "( keep hovering )";
+  transition: width 0s linear 1s;
+  width: 0;
+}
+.hidden-until-hover:hover > * {
+  transition: visibility 0s linear 1s;
+  visibility: visible;
+}
+
+.warning:not(.warning-active) {
+  transition:
+    color 1s,
+    opacity 1s;
+}
+.warning-active {
+  color: #ff0000;
+  opacity: 1;
+}
+
+.star-count {
+  color: #ffff66;
+}
+.supporter-badge {
+  color: #ffff66;
+}
+a.supporter-badge:hover,
+a.supporter-badge:focus {
+  text-decoration: none;
+  color: #ffffcc;
+  text-shadow: 0 0 5px #ffff66;
+}
+.sponsor-badge {
+  color: #79a2d8;
+}
+a.sponsor-badge:hover,
+a.sponsor-badge:focus {
+  text-decoration: none;
+  color: #ccdbed;
+  text-shadow: 0 0 5px #79a2d8;
+}
+
+header {
+  white-space: nowrap;
+  cursor: default;
+  z-index: 100;
+  margin-bottom: 2em;
+}
+header h1 {
+  display: inline-block;
+  margin: 0;
+  padding-right: 1em;
+}
+header h1 a,
+header h1 span {
+  display: inline-block;
+  text-decoration: none;
+  color: #00cc00;
+  text-shadow:
+    0 0 2px #00cc00,
+    0 0 5px #00cc00;
+}
+header h1 a:hover,
+header h1 a:focus {
+  color: #99ff99;
+  text-shadow:
+    0 0 2px #99ff99,
+    0 0 5px #99ff99;
+}
+header h1.title-event .title-event-wrap {
+  opacity: 0.33;
+  white-space: pre;
+}
+header .user {
+  display: inline-block;
+  padding-left: 1em;
+}
+header nav {
+  display: inline-block;
+}
+header nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+}
+header nav li {
+  display: inline-block;
+  padding: 0 0.6em;
+}
+header nav a {
+  display: inline-block;
+  text-decoration: none;
+  outline: none;
+}
+
+input[type="text"],
+textarea {
+  background: transparent;
+  color: inherit;
+  border: 1px solid #666666;
+  background: #10101a;
+  padding: 0 2px;
+  font-family: inherit;
+  font-size: inherit;
+  margin: 0;
+}
+textarea {
+  vertical-align: top;
+}
+
+label img {
+  vertical-align: bottom;
+  position: relative;
+  top: -3px;
+  margin-right: 0.3em;
+}
+
+*::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+article {
+  width: 45em;
+  margin-bottom: 2em;
+  margin-top: 2em;
+}
+article:first-of-type {
+  margin-top: 0;
+}
+article h2 {
+  color: #ffffff;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  white-space: nowrap;
+}
+article h2 + * {
+  margin-top: 0;
+}
+article em {
+  color: #ffffff;
+  font-style: normal;
+  text-shadow: 0 0 5px #ffffff;
+}
+article em.star {
+  color: #ffff66;
+  font-style: normal;
+  text-shadow: 0 0 5px #ffff66;
+}
+article a {
+  white-space: nowrap;
+}
+article .aside {
+  opacity: 0.6;
+}
+article ul {
+  list-style-type: none;
+  padding: 0;
+}
+article li {
+  padding-left: 2.5em;
+  position: relative;
+}
+article li:before {
+  content: "\00a0\00a0-\00a0";
+  position: absolute;
+  left: 0;
+  top: 0;
+}
